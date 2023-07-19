@@ -47,7 +47,7 @@ const routes = [
     label: "Music Generation",
     icon: Music,
     href: "/music",
-    color: "text-orange-700",
+    color: "text-emerald-700",
   },
   {
     label: "Code Generation",
