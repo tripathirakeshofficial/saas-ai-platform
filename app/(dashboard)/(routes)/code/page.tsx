@@ -51,7 +51,7 @@ const CodePage = () => {
 
       form.reset();
     } catch (error: any) {
-      //TODO: Open Pro Model
+      //TODO: Open Pro Modal
       console.log(error);
     } finally {
       router.refresh();
@@ -72,17 +72,7 @@ const CodePage = () => {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="rounded-lg
-            border
-            w-full
-            p-4
-            px-3
-            md:px-6
-            focus-within:shadow-sm
-            grid
-            grid-cols-12
-            gap-2
-            "
+              className="rounded-lg border w-full p-4 px-3 md:px-6 focus-within:shadow-sm grid grid-cols-12 gap-2"
             >
               <FormField
                 name="prompt"
@@ -115,7 +105,7 @@ const CodePage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <Empty label="No code generations started." />
+            <Empty label="No codes generated." />
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map((message) => (
