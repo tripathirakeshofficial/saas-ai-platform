@@ -11,6 +11,8 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: Request) {
   try {
     const { userId } = auth();

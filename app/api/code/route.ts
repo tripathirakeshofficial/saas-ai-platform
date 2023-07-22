@@ -17,6 +17,8 @@ const instructionMessage: ChatCompletionRequestMessage = {
     "You are a code generator. You must answer only in markdown code snippets. Use code comments for explanations.",
 };
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
