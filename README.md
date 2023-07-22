@@ -50,8 +50,9 @@ Genius is deployed using Vercel, a leading cloud platform, ensuring top-notch pe
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/genius.git
-cd genius
+git clone https://github.com/your-username/saas-ai-platform.git
+cd saas-ai-platform
+
 ```
 
 2. Install dependencies:
