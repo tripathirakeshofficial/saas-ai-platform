@@ -11,8 +11,6 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-export const dynamic = "force-dynamic";
-
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
@@ -32,7 +30,7 @@ export async function POST(req: Request) {
     }
 
     const freeTrial = await checkApiLimit();
-    const isPro = checkSubscription();
+    const isPro = await checkSubscription();
 
     if (!freeTrial && !isPro) {
       return new NextResponse("Free trial has expired.", { status: 403 });
