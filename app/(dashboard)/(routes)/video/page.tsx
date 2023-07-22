@@ -45,7 +45,13 @@ const VideoPage = () => {
       if (error?.response?.status === 403) {
         proModal.onOpen();
       } else {
-        toast.error("Something went wrong!");
+        if (error?.response?.status === 504) {
+          toast.error(
+            "Sorry! The server is currently busy! Kindly try other generations or come back later!"
+          );
+        } else {
+          toast.error("Something else went wrong!");
+        }
       }
     } finally {
       router.refresh();
