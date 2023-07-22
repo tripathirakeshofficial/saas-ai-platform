@@ -1,6 +1,6 @@
 # Genius - Empowering Businesses with AI 🚀
 
-![Genius Logo](logo.png)
+![Genius Logo](public/logo.png)
 
 ## Demo
 https://aigenius.vercel.app/
